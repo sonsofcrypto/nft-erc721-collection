@@ -910,6 +910,7 @@ section {
             url("images/bull-pepe@3x.png") 3x
     );
     background-position: bottom;
+    margin-top: 141px;
 }
 
 .distribution-flex-container {
@@ -1150,7 +1151,7 @@ section h1 {
 footer {
     background-color: #211E3D;
     color: white;
-    margin-top: 98px;
+    margin-top: 141px;
     padding-top: 41px;
     padding-bottom: 41px;
 }
