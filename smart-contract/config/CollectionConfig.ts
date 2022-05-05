@@ -9,25 +9,25 @@ const CollectionConfig: CollectionConfigInterface = {
   // The contract name can be updated using the following command:
   // yarn rename-contract NEW_CONTRACT_NAME
   // Please DO NOT change it manually!
-  contractName: 'YourNftToken',
-  tokenName: 'My NFT Token',
-  tokenSymbol: 'MNT',
-  hiddenMetadataUri: 'ipfs://__CID__/hidden.json',
-  maxSupply: 10000,
+  contractName: 'Web3WalletNFT',
+  tokenName: 'web3wallet NFT',
+  tokenSymbol: 'W3WNFT',
+  hiddenMetadataUri: 'ipfs://QmUKqZ1DH3iVYhM76PLDQv1nADv6SYEnodVRNXQiHFaDRd/hidden.json',
+  maxSupply: 1133,
   whitelistSale: {
-    price: 0.05,
+    price: 0.005,
     maxMintAmountPerTx: 1,
   },
   preSale: {
-    price: 0.07,
+    price: 0.007,
     maxMintAmountPerTx: 2,
   },
   publicSale: {
-    price: 0.09,
+    price: 0.009,
     maxMintAmountPerTx: 5,
   },
-  contractAddress: null,
-  marketplaceIdentifier: 'my-nft-token',
+  contractAddress: "0x8ba5449f78Cc98576B38AC16983dFBC62FC3C209",
+  marketplaceIdentifier: 'web3wallet-nft',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
 };
