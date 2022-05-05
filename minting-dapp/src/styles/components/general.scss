@@ -1,5 +1,5 @@
 body {
-  @apply p-6;
+  //@apply p-6;
   @apply min-h-screen;
 
   @apply font-sans;
@@ -12,15 +12,15 @@ body {
   //@apply bg-center bg-cover bg-fixed;
 }
 
-a, a:link, a:visited {
-  @apply font-semibold;
-  @apply text-links-txt;
-
-  &:hover {
-    @apply underline;
-    @apply text-links-hover_txt;
-  }
-}
+//a, a:link, a:visited {
+//  @apply font-semibold;
+//  @apply text-links-txt;
+//
+//  &:hover {
+//    @apply underline;
+//    @apply text-links-hover_txt;
+//  }
+//}
 
 strong {
   @apply font-semibold;
@@ -28,12 +28,6 @@ strong {
 
 main {
   @apply flex flex-col;
-}
-
-#logo {
-  @apply m-auto;
-  @apply w-full;
-  @apply max-w-md;
 }
 
 span.emoji {

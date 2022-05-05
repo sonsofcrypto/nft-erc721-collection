@@ -3,6 +3,7 @@
   @apply mt-6 mx-auto;
   @apply w-full;
   @apply max-w-md;
+  @apply z-50;
 
   .no-wallet {
     @apply flex flex-col;
@@ -12,6 +13,8 @@
     @apply text-popups-txt;
     @apply bg-popups-bg;
     @apply shadow;
+
+    @apply border border-popups-border;
 
     .use-block-explorer {
       &:not(:first-child) {
@@ -32,6 +35,7 @@
     .merkle-proof-manual-address {
       @apply flex flex-col;
       @apply mt-4;
+      @apply border border-popups-border;
 
       h2 {
         @apply font-semibold;
@@ -72,6 +76,7 @@
     @apply text-popups-txt text-sm;
     @apply bg-popups-bg;
     @apply shadow;
+    @apply border border-popups-border;
 
     .spinner {
       @apply inline;
@@ -88,6 +93,7 @@
     @apply text-popups-txt text-sm;
     @apply bg-popups-bg;
     @apply shadow;
+    @apply border border-popups-border;
 
     & > * {
       @apply flex flex-col items-center;
@@ -170,6 +176,7 @@
     @apply text-popups-txt text-center;
     @apply bg-popups-bg;
     @apply shadow;
+    @apply border border-popups-border;
 
     .preview {
       @apply p-8;
