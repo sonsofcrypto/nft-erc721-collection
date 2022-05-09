@@ -405,24 +405,24 @@ section {
     position: relative;
 }
 
-#minting-dapp {
+#minting-dapp, #nft-banner {
     margin-top: 574px;
 }
 
 @media only screen and (max-width: 1080px) {
-    #minting-dapp { margin-top: 456px; }
+    #minting-dapp, #nft-banner { margin-top: 456px; }
 }
 
 @media only screen and (max-width: 866px) {
-    #minting-dapp { margin-top: 365px; }
+    #minting-dapp, #nft-banner { margin-top: 365px; }
 }
 
 @media only screen and (max-width: 660px) {
-    #minting-dapp { margin-top: 288px; }
+    #minting-dapp, #nft-banner { margin-top: 288px; }
 }
 
 @media only screen and (max-width: 560px) {
-    #minting-dapp { margin-top: 452px; }
+    #minting-dapp, #nft-banner { margin-top: 452px; }
 }
 
 .cards {
@@ -779,12 +779,12 @@ section {
     margin-top: -40px;
 }
 
-#ido a {
+#ido a, #nft-sale-closed a {
     color: #83CEFF;
     text-decoration: none;
 }
 
-#ido a:hover {
+#ido a:hover, #nft-sale-closed a:hover {
     color: #83CEFF;
     text-decoration: none;
     text-shadow: 0px 0px 8px #83CEFF;

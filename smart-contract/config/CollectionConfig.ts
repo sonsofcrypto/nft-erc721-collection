@@ -16,15 +16,15 @@ const CollectionConfig: CollectionConfigInterface = {
   maxSupply: 1133,
   whitelistSale: {
     price: 0.005,
-    maxMintAmountPerTx: 1,
+    maxMintAmountPerTx: 100,
   },
   preSale: {
     price: 0.007,
-    maxMintAmountPerTx: 2,
+    maxMintAmountPerTx: 1,
   },
   publicSale: {
     price: 0.009,
-    maxMintAmountPerTx: 5,
+    maxMintAmountPerTx: 1,
   },
   contractAddress: "0x8ba5449f78Cc98576B38AC16983dFBC62FC3C209",
   marketplaceIdentifier: 'web3wallet-nft',

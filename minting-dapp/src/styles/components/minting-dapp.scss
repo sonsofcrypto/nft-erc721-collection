@@ -17,25 +17,25 @@
     @apply border border-popups-border;
 
     .use-block-explorer {
+    }
+
+    .merkle-proof-manual-address {
+      @apply flex flex-col;
+      @apply mt-4;
+
       &:not(:first-child) {
         @apply mt-3;
       }
 
       &:not(:first-child)::before {
         content: '';
-        
+
         @apply block;
         @apply mx-auto my-3;
         @apply w-12;
 
         @apply border-t-2 border-popups-internal_border;
       }
-    }
-
-    .merkle-proof-manual-address {
-      @apply flex flex-col;
-      @apply mt-4;
-      @apply border border-popups-border;
 
       h2 {
         @apply font-semibold;

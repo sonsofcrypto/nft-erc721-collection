@@ -89,19 +89,50 @@
   </div>
   <section class="content-wrapper"></section>
   <main>
-    <div id="minting-dapp" ></div>
+<!--    <div id="minting-dapp" ></div>-->
   </main>
+<section id="nft-banner">
+  <div class="content-wrapper">
+    <div id="nft-banner-img" class="card-base"></div>
+  </div>
+</section>
+<section id="nft-sale-closed">
+  <div class="content-wrapper">
+    <h1>Mint countdown</h1>
+    <div class="std-content-flex-container">
+      <div class="std-content-flex-item-left">
+        <p id="nft-countdown-elem">-</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--<section id="nft-sale-closed">-->
+<!--  <div class="content-wrapper">-->
+<!--    <h1>Mint</h1>-->
+<!--    <div class="std-content-flex-container">-->
+<!--      <div class="std-content-flex-item-left">-->
+<!--        <p class="first-content-p">-->
+<!--          All the NFTs has been minted. Thank you anons 😍! You can buy and sell them at <a href="" target="_blank">Open Sea</a>.-->
+<!--        </p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+
 <section id="wallet">
   <div class="content-wrapper">
     <h1>web3 Wallet NFT</h1>
     <div class="std-content-flex-container">
       <div class="std-content-flex-item-left">
         <p class="first-content-p">
-          This one is for the web3 wallet OGs, sons of crypto gang! 1000 NFTs available to mint. Plus 100 reserved for rewards and giveaways. 1100 total. 1043 regulard, 19 Bronze, 19 Silver, 19 Gold. Any wallet that holds any of the NFTs from this collection is entitled to fee free usage of all the produts and services within web3wallet for eternity.
+          This one is for the web3 wallet OGs, sons of crypto gang! 1000 NFTs available to mint. Plus 100 reserved for rewards and giveaways. 1100 total. 1043 Regular, 19 Bronze, 19 Silver, 19 Gold. Any wallet that holds any of the NFTs from this collection is entitled to fee free usage of all the products and services within web3wallet for eternity. (Needless to say this excludes gas fees as those are part of Ethereum protocol)
         </p>
         </br>
         <p>
-          If minted Bored Ape for 0.08 ETH back in april 2021. You were up mind blowing 145,000%. This does not include Mutants, Kennel and Ape coin airdrop. Best investment of last couple of years. Point is BAYC took care of their OGs. We are not commiting to anything beyond no fees at this time. You should have no expectation of profit from work of others. Yady, yady, yada. But we sure value our OGs dearly and ** **** **** **** ** **
+          If you minted Bored Ape for 0.08 ETH back in april 2021. You were up mind blowing 145,000%. This does not include Mutants, Kennel and Ape coin airdrops. Best investment of last couple of years. Point is BAYC took care of their OGs. We are not committing to anything beyond no fees at this time. You should have no expectation of profit from work of others. But we sure value our OGs dearly and ** **** **** **** ** **
         </p>
       </div>
       <div class="std-content-flex-item-right grid-flex-container">
@@ -152,4 +183,24 @@
   </div>
 </footer>
 </body>
+<script>
+  function countDown(toDate, elemId) {
+    let now = new Date().getTime();
+    let distance = toDate - now;
+    let months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30.5));
+    let weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7) - (4.3 * months));
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24) - (7 * (weeks + 4.3 * months)));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    let monthsStr = months > 0 ? months + "m " : ""
+    let weekStr = weeks > 0 ? weeks + "w " : ""
+    document.getElementById(elemId).innerHTML = monthsStr + weekStr + days + "d "
+            + hours + "h " + minutes + "m " + seconds + "s ";
+  }
+
+  let nftCountDown = new Date("May 11, 2022 17:00:00 UTC").getTime();
+
+  setInterval(function() { countDown(nftCountDown, "nft-countdown-elem")  }, 1000);
+</script>
 </html>
